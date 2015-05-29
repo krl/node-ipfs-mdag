@@ -1,0 +1,37 @@
+{
+  "name": "node-ipfs-mdag",
+  "version": "0.1.0",
+  "description": "node ipfs mdag implementation",
+  "main": "index.js",
+  "scripts": {
+    "lint": "git diff --name-only --cached --relative | egrep .js$ | xargs --no-run-if-empty standard"
+  },
+  "pre-commit": [
+    "lint"
+  ],
+  "keywords": [
+    "ipfs",
+    "merkledag"
+  ],
+  "Author": "Kristoffer Ström <kristoffer@rymdkoloni.se>",
+  "license": "MIT",
+  "dependencies": {
+    "kew": "^0.5.0",
+    "seamless-immutable": "^2.3.2",
+    "lodash": "^3.9.3"
+  },
+  "devDependencies": {
+    "ipfsd-ctl": "^0.1.8",
+    "mocha": "^2.2.5",
+    "pre-commit": "^1.0.6",
+    "standard": "^3.3.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/krl/node-ipfs-mdag.git"
+  },
+  "bugs": {
+    "url": "https://github.com/krl/node-ipfs-mdag/issues"
+  },
+  "homepage": "https://github.com/krl/node-ipfs-mdag"
+}
